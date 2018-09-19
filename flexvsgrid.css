@@ -1,0 +1,160 @@
+/****** General Style ****/
+* {
+  font-family: lato;
+  scroll-behavior: smooth;
+}
+
+* h1, h2, h3, h4 {
+  font-family: nunito;
+}
+
+main {
+  /* padding-top: 5em */
+}
+
+section {
+  /* min-height: 100vh; */
+}
+/************************ /
+
+
+/******* Navigation ******/
+nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  justify-content: space-between;
+  background-color: blueviolet;
+}
+
+
+/* this refers to the div class nav-icon.  */
+.nav-icon {
+  width: 4em;
+  height: 4em;
+  background-color: aqua;
+}
+
+.nav-links {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  background-color: rgb(212, 255, 0);
+}
+
+li {
+  width: 4em;
+  text-align: center;
+  align-self: center;
+  list-style: none;
+  background-color:red; 
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  transition: 5ms;
+}
+/***************************/
+
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 10em;
+  box-sizing: border-box;
+}
+
+
+/******* Flex Section Example ******/
+.flex-section {
+  display: flex;
+  background-color: blanchedalmond;
+  margin-bottom: 2em;
+  padding: 0 5vw 0 5vw;
+  justify-content: space-evenly;
+}
+
+.flex-article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  background-color: ghostwhite;
+  margin: 1em;
+}
+
+.flex-article-container img {
+  max-width: 240px;
+  padding: 1em 0 1em 0;
+}
+
+.flex-article-title-container {
+  text-align: center;
+  margin: 0 1em 0 1em;
+}
+
+.flex-article-copy {
+  margin: 0 1em 0 1em;
+  padding: 1em 0 1em 0;
+}
+
+
+
+
+
+/***********************************/
+
+/******* Grid Section Example ******/
+
+.grid-section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". content content .";
+  grid-template-columns: .2fr 1fr 1fr .2fr;
+  background-color: blanchedalmond;
+  margin-bottom: 2em;
+}
+
+.grid-article-section {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  background-color: aquamarine;
+}
+
+.grid-article-container {
+  grid-area: auto;
+  display: grid;
+  justify-self: center;
+  margin: 1em;
+  padding: 1em;
+  justify-items: center;
+  background-color: azure;
+  max-width: 450px;
+}
+
+.grid-article-container:nth-child(even) {
+  background-color: rgb(224, 238, 238);
+}
+
+
+/***********************************/
+
+
+
+
+/******* Footer Section Example ******/
+
+.page-footer {
+  display: flex;
+  background-color: blueviolet;
+  height: 8em;
+}
+
+
+/***********************************/
